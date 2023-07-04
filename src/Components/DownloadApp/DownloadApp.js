@@ -91,6 +91,7 @@ function DownloadApp() {
                         alignItems: "center",
                         justifyContent: "center",
                         mt: 3,
+                        cursor:'pointer'
                       }}
                     >
                       <Box width={30} height={30} component="img" src={apple} />
@@ -116,6 +117,7 @@ function DownloadApp() {
                         justifyContent: "center",
                         mt: 3,
                         ml: 2,
+                        cursor:"pointer"
                       }}
                     >
                       <Box
