@@ -14,7 +14,8 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { Container} from "@mui/material";
-import logo from "../../imgs/Group.png";
+import colorLogo from "../../imgs/color-logo.png"
+import whiteLogo from "../../imgs/white-logo.png"
 
 const drawerWidth = 240;
 // const navItems = ["Home", "About us", "Pricing","FAQ"];
@@ -144,7 +145,7 @@ function DrawerAppBar(
               <Box sx={{ display: "flex", alignItems: "center" }}>
                 <Box
                   component="img"
-                  src={logo}
+                  src={navbar? whiteLogo:colorLogo}
                   sx={{
                     width: "40%",
                     height: { xs: "30px", sm: "38px" },
