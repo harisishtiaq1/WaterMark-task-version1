@@ -4,7 +4,6 @@ import {
   Divider,
   Grid,
   ThemeProvider,
-  Toolbar,
   createTheme,
 } from "@mui/material";
 import AboutUs from "../Footer/AboutUs/AboutUs";
