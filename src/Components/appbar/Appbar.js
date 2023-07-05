@@ -13,9 +13,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import { Container} from "@mui/material";
-import colorLogo from "../../imgs/color-logo.png"
-import whiteLogo from "../../imgs/white-logo.png"
+import { Container } from "@mui/material";
+import colorLogo from "../../imgs/color-logo.png";
+import whiteLogo from "../../imgs/white-logo.png";
 
 const drawerWidth = 240;
 // const navItems = ["Home", "About us", "Pricing","FAQ"];
@@ -26,6 +26,10 @@ const drawerWidth = 240;
 //     paddingRight: "15px",
 //   };
 // };
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+const logoStyle = {
+  width: isSafari ? "20px" : "50px",
+};
 
 function DrawerAppBar(
   {
@@ -145,12 +149,12 @@ function DrawerAppBar(
               <Box sx={{ display: "flex", alignItems: "center" }}>
                 <Box
                   component="img"
-                  src={navbar? whiteLogo:colorLogo}
+                  src={navbar ? whiteLogo : colorLogo}
                   sx={{
-                    width: "40%",
                     height: { xs: "30px", sm: "38px" },
                     marginRight: "8px",
                   }}
+                  style={logoStyle}
                 />
                 <Typography
                   variant="h6"
