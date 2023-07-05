@@ -28,7 +28,7 @@ const drawerWidth = 240;
 // };
 const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 const logoStyle = {
-  width: isSafari ? "20px" : "50px",
+  width: isSafari ? "20%" : "40%",
 };
 
 function DrawerAppBar(
