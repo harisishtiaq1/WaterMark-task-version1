@@ -21,7 +21,7 @@ const Home = ({ homeRef }) => {
 
       <Container maxWidth="lg">
         <Grid sx={{ mt: "20px" }} container spacing={4}>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={6} xl={6}>
             <Typography
               variant="h1"
               sx={{
@@ -121,19 +121,20 @@ const Home = ({ homeRef }) => {
               },
             }}
             sm={6}
+            xl={6}
           >
             <Box
               sx={{
                 background: `url(${backImg})`,
-                height: "85vh",
+                height: "91vh",
                 // width: { md: "67%", xs: "99%" },
                 backgroundSize: {
-                  lg: "100% 100%",
-                  md: "100% 100%",
-                  sm: "100% 85%",
+                  lg: "100% 91%",
+                  md: "100% 91%",
+                  sm: "100% 70%",
                 },
                 backgroundRepeat: "no-repeat",
-                backgroundPositionY: "8rem",
+                backgroundPositionY: "9rem",
               }}
             >
               <Box
@@ -150,8 +151,9 @@ const Home = ({ homeRef }) => {
                 src={homeImg}
                 sx={{
                   position: "absolute",
-                  top: { lg: "21rem", md: "21rem", sm: "17rem" },
-                  right: { lg: "25rem", md: "11rem", sm: "9rem" },
+                  width:{lg:'20%',md:'29%',xl:"13%"},
+                  top: { lg: "19rem", md: "20rem", sm: "17rem",xl:"20rem" },
+                  right: { lg: "23rem", md: "12rem", sm: "9rem",xl:"57rem" },
                   height: { sm: "22vh", md: "unset" },
                 }}
               />

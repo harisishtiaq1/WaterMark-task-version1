@@ -22,24 +22,24 @@ const About = ({ aboutRef }) => {
         <Container sx={{ padding: "0px" }}>
           <Grid container>
             <Grid item xs={12} sm={6} sx={{ textAlign: { xs: "center" } }}>
-              {/* <Container> */}
+              <Container>
               <Box
                 sx={{
                   backgroundImage: `url(${backimg})`,
                   backgroundRepeat: "no-repeat",
                   backgroundSize: {
                     md: "100% 73%",
-                    xs: "100% 78%",
-                    lg: "100% 85%",
-                    sm: "100% 85%",
+                    xs: "100% 72%",
+                    lg: "100% 76%",
+                    sm: "100% 70%",
                   },
                   backgroundPositionY: {
                     lg: "14rem",
                     md: "14rem",
                     xs: "11rem",
-                    sm:'11rem'
+                    sm:'13rem'
                   },
-                  height:{sm:'80vh',md:'100vh',lg:'90vh'},
+                  height:{sm:'84vh',md:'100vh',lg:'91vh'},
                   backgroundPositionX: { lg: "0rem", md: "0rem" },
                   position:'relative'
                 }}
@@ -65,8 +65,8 @@ const About = ({ aboutRef }) => {
                     left: {lg:"2rem",md:"3rem",sm:'1rem'},
 
                     width: {sm:'18%',md:"16%"},
-                    borderRadius: {sm:'5px',md:"12px"},
-                    padding:{lg:"15px",md:'7px',sm:'2px'},
+                    borderRadius: {sm:'5px',md:"5px"},
+                    padding:{lg:"15px",md:'7px 4px',sm:'2px'},
                   }}
                 >
                   <Typography sx={{ fontSize: {sm:'10px',md:"12px"}, color: "#ADAFB5" }}>
@@ -78,11 +78,11 @@ const About = ({ aboutRef }) => {
                     display:{xs:'none',sm:'block'},
                     background: "white",
                     position: "absolute",
-                    top: {lg:"28rem",md:'27rem'},
+                    top: {lg:"26rem",md:'27rem'},
                     left: {sm:'1rem',md:"2rem"},
                     color: "#ADAFB5",
                     width: {sm:'19%',md:"16%"},
-                    borderRadius: {sm:'5px',md:"12px"},
+                    borderRadius: {sm:'5px',md:"5px"},
                     padding: {lg:"14px 15px 2px 15px",md:"10px 10px 1px 10px",sm:'6px'},
                     bottom:{sm:'4rem',md:'unset'}
                   }}
@@ -96,18 +96,18 @@ const About = ({ aboutRef }) => {
                   display:{xs:'none',sm:'none',md:'block'},
                     background: "white",
                     position: "absolute",
-                    top: {lg:"23rem",md:'21rem'},
-                    left: {lg:"31rem",md:"27rem"},
+                    top: {lg:"20rem",md:'22rem'},
+                    left: {lg:"29rem",md:"25rem"},
                     color: "#ADAFB5",
                     width: "16%",
-                    borderRadius: "12px",
+                    borderRadius: "5px",
                     padding: {lg:"14px 15px 2px 15px",md:'10px 10px 1px 10px'},
                   }}>
                     <Box component="img" src={vcam} />
                     <Typography sx={{fontSize:'12px',color: "#ADAFB5"}}>video</Typography>
                   </Box>
               </Box>
-              {/* </Container> */}
+              </Container>
             </Grid>
             <Grid
               item
