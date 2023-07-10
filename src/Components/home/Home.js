@@ -151,9 +151,9 @@ const Home = ({ homeRef }) => {
                 src={homeImg}
                 sx={{
                   position: "absolute",
-                  width:{lg:'20%',md:'29%',xl:"13%"},
-                  top: { lg: "19rem", md: "20rem", sm: "17rem",xl:"20rem" },
-                  right: { lg: "23rem", md: "12rem", sm: "9rem",xl:"57rem" },
+                  width:{lg:'20%',md:'29%'},
+                  top: { lg: "19rem", md: "20rem", sm: "17rem" },
+                  right: { lg: "23rem", md: "12rem", sm: "9rem" },
                   height: { sm: "22vh", md: "unset" },
                 }}
               />
